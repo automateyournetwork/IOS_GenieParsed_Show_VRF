@@ -1,0 +1,1 @@
+{"vrf": {"PROD": {"protocols": ["ipv4"], "interfaces": ["Port-channel1.40"]}, "DEV": {"protocols": ["ipv4"], "interfaces": ["Port-channel1.10", "Vlan10", "Vlan20"]}, "mgmtVrf": {"protocols": ["ipv4", "ipv6"], "interfaces": ["FastEthernet1"]}}}

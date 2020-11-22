@@ -1,0 +1,20 @@
+---
+vrf:
+    PROD:
+        interfaces:
+        - Port-channel1.40
+        protocols:
+        - ipv4
+    DEV:
+        interfaces:
+        - Port-channel1.10
+        - Vlan10
+        - Vlan20
+        protocols:
+        - ipv4
+    mgmtVrf:
+        interfaces:
+        - FastEthernet1
+        protocols:
+        - ipv4
+        - ipv6
