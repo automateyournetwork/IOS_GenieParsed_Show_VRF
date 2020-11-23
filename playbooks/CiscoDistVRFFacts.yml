@@ -113,7 +113,7 @@
     - name: Markdown Data Row
       lineinfile:
         path: ../documentation/FACTS/CAMPUS/DISTRIBUTION/{{ inventory_hostname }}_Show_VRF.md
-        line: "{{ item.key }},{{ item.value.protocols | regex_replace (',',' ') }},{{ item.value.interfaces | regex_replace (',',' ') }}"
+        line: "| {{ item.key }} | {{ item.value.protocols | regex_replace (',',' ') }} | {{ item.value.interfaces | regex_replace (',',' ') }} |"
         create: yes
       loop: "{{ pyats_all_vrfs.vrf | dict2items }}"
 
